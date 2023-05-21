@@ -1,0 +1,95 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class binary
+{
+
+private:
+    string s;
+
+public:
+    void read_bin(void);
+    void chk_bin(void);
+    void onescompliment(void);
+    void display_bin(void);
+};
+
+void binary::read_bin(void)
+{
+
+    cout << "enter the number" << endl;
+    cin >> s;
+}
+
+void binary ::chk_bin()
+{
+
+    for (int i = 0; i < s.length(); i++)
+    {
+
+        if (s.at(i) != '0' && s.at(i) != '1')
+        {
+
+            cout << "incorrect binary format" << endl;
+            exit(0);
+        }
+    }
+}
+
+void binary ::onescompliment()
+{
+
+    cout << "the onescompliment will be" << endl;
+
+    for (int i = 0; i < s.length(); i++)
+    {
+
+        if (s.at(i) == '0')
+        {
+
+            s.at(i) = '1';
+        }
+
+        else
+        {
+
+            s.at(i) = '0';
+        }
+    }
+}
+
+void binary::display_bin()
+{
+
+    cout << "displaying the value of binary number\n"
+         << endl;
+
+    for (int i = 0; i < s.length(); i++)
+    {
+
+        cout << s.at(i);
+    }
+
+    cout << endl;
+    
+}
+
+int main()
+{
+
+    binary bin;
+
+    bin.read_bin();
+    bin.chk_bin();
+
+    bin.display_bin();
+    
+    bin.onescompliment();
+
+    bin.display_bin();
+
+   
+    return 0;
+}
