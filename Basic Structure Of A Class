@@ -1,0 +1,34 @@
+#include<iostream>
+
+using namespace std;
+
+class class-name{
+
+private:
+
+public:
+
+
+function definition;
+|
+|
+|
+ending function
+
+};
+
+function defining(void cname::function defition)
+
+
+int main(){
+
+creation of object;
+
+passing values to object(public);
+
+calling function to insert values of private variable;
+
+
+return 0;
+}
+
