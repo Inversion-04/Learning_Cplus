@@ -1,0 +1,16 @@
+//import string library before using string different functions like length,indexing are used majorly in c++
+#include<iostream>
+#include<string>
+
+using namespace std;
+int  main(){
+    
+    string var="String";
+    
+    cout<<var[0];
+    cout<<var[1];
+    cout<<var[2];
+    
+    
+    return 0;
+}
