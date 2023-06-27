@@ -5,7 +5,7 @@ int main()
 {
 
 // input number of inputs//
-
+// nthis area is specifically for taking number of inputs 
  int t;
 
  cin>>t;
