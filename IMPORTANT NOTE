@@ -1,4 +1,4 @@
-IF YOU WANT AN ANSWER IN INT BUT   INPUT  CONTAINS 2 VARIABLES A,B IN FORM OF DATATYPE DOUBLE AND THEN USE ANOTHER VARIABLE X TO TYPE CAST IT INTO
+1  IF YOU WANT AN ANSWER IN INT BUT   INPUT  CONTAINS 2 VARIABLES A,B IN FORM OF DATATYPE DOUBLE AND THEN USE ANOTHER VARIABLE X TO TYPE CAST IT INTO
 
 NEW DATATYPE INT BY DEFINING X DATATYPE AS INT 
 
@@ -11,3 +11,9 @@ X=A/B;
 COUT<<X;
 
 YOU GET ANSWER IN INT :-);
+2
+  in if else statement please note that inside if and else if statement not equal is same i.e is != we don"t write it as (!==0)---this is wrong
+
+ok,
+
+now for = statement in if else statements we use== as assignment operator i.e A%B==0 not single = to i.e (=)
