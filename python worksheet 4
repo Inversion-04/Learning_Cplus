@@ -1,0 +1,88 @@
+#worksheet 4#
+
+'''
+6
+
+lst=[]
+n=int(input("enter:"))
+for i in range(n):
+    e=int(input())
+    lst.append(e)
+    
+for i in lst:
+    if(i%2==0):
+       lst.remove(i)
+print(lst)    
+   
+
+
+
+7
+
+str1=input("Enter the string:-")
+f=0
+for i in range(len(str1)):
+     
+    if(str1[len(str1)-i-1]==str1[i]):
+        f=1
+    else:
+        f=0
+        
+if(f==1):
+    print("Yes")
+else:
+    print("No")
+  
+
+
+8
+
+lst1 = [1, 2, [3, 4]]
+lst2 = lst1[:]
+lst2[2][0] = 5
+print(lst2)
+
+9
+
+ lst = [1, 2, 3, 4, 5]
+output = lst[-2:1]
+print(output)
+
+
+14
+
+s = "python"
+print(s[-3:])
+
+output--->hon
+
+
+17
+
+-->
+numbers = [10, 20, 30, 40, 50]
+print(sum(numbers))
+print(max(numbers))
+
+--->
+numbers = [1, 2, 3, 4, 3, 5]
+numbers.remove(3)
+print(numbers)
+
+--->
+numbers = [1, 2, 3, 4, 5]
+numbers.reverse()
+print(numbers)
+
+--->
+s = "Hello"
+print(s.lower())
+
+--->
+s = "hello world"
+count = s.count(' o ')
+print(count)  
+
+--->
+
+'''
