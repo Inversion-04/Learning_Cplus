@@ -1,0 +1,44 @@
+##count no of digits
+'''
+num=int(input("enter the number:"))
+
+
+c=0
+while num>0:
+    rem=num%10
+    c=c+1
+    num=num//10
+    
+print("the number of digits are" ,c) 
+'''
+##reverse and pallindrome
+'''
+
+num=int(input("enter the number:"))
+y=num
+rev=0
+while num>0:
+    rem=num%10
+    rev=rev*10+rem
+    num=num//10
+   
+print("the reverse of number is:",rev)
+
+if(rev==y):
+    print("pallindrome")
+else:
+    print("Not-a-Pallindrome")
+'''
+
+#factorial of a number
+'''
+num=int(input("enter the number:"))
+i=0
+fact=1
+while num-i>0:
+    fact=fact*(num-i)
+    i=i+1
+    
+print(fact)    
+    
+'''
