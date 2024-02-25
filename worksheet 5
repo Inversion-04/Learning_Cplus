@@ -1,0 +1,43 @@
+1
+'''
+lst=["atul","aman","ankit","abhinav gupta","ritik"]
+ch="a"
+indexes=[]
+for item in lst:
+    if ch in item:
+        e=lst.index(item)
+        indexes.append(e)
+
+
+print(indexes)
+        
+  '''
+  
+ 2
+
+'''  
+num1=input("")
+num2=input(" ")
+prdct=int(num1)*int(num2)
+a=str(prdct)
+
+print(a,type(a))
+
+'''
+
+3
+'''
+sentence=input()
+lst=sentence.split()
+l=len(lst)
+print(len(lst[l-1]))
+'''  
+
+4
+'''
+
+
+
+
+
+'''
