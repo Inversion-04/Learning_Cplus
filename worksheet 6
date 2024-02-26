@@ -1,0 +1,43 @@
+#worksheet6
+
+6)
+
+s=input()
+k=input()
+lst=[]
+i=0
+while True:
+    pos=s.find(k,i)
+    if pos==-1:
+        break
+    
+    else:
+        lst.append(pos)
+        i=pos+len(k)
+    
+    
+print(lst)
+
+
+
+2)
+
+a=list(map(int,input().split()))
+for i in a:
+    if(a.count(i)==1):
+        print(i)
+        break
+
+
+
+
+
+
+7)
+
+
+a=list(map(int,input().split()))
+k=int(input())
+d={i:i+k for i in a}
+    
+print(d)    
