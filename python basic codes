@@ -39,6 +39,19 @@ while num-i>0:
     fact=fact*(num-i)
     i=i+1
     
-print(fact)    
+print(fact)
+
+numpy library important functions 
+
+
+import numpy as np
+l1=np.array([1,2,3,4])
+l2=np.array([1,32,4])
+print(l1.sum(),l2.sum())
+print(l1)
+print(l1.shape)
+print(l1.size,l1.sum(),l1.min(),l1.max())
+print(np.linspace(1,10,5))
+print(np.arange(20))
     
 '''
