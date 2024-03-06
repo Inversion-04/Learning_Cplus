@@ -53,5 +53,12 @@ print(l1.shape)
 print(l1.size,l1.sum(),l1.min(),l1.max())
 print(np.linspace(1,10,5))
 print(np.arange(20))
-    
+
+
+
+reverse ecah word of string (use join,split)
+str1="Everyone Loves Data Science"
+str1=str1.split()
+r=[i[::-1] for i in str1]
+print(' '.join(r))
 '''
