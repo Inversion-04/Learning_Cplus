@@ -1,0 +1,114 @@
+#1
+'''def perfect(n):
+    a=n**0.5
+    if a.is_integer() :
+        print(int(n**0.5))
+    else:
+        print("-1")
+x=int(input("enter the number:"))
+perfect(x)
+
+'''
+ 
+#2    
+'''def area(n):
+     print( n*n)
+     
+n1=int(input("enter the value:"))
+area(n1)
+'''
+
+#3
+'''def area(n):
+     print( 3.14*n*n)
+     
+n1=float(input("enter the radius:"))
+area(n1)'''
+
+#4
+'''def power(x,y):
+     print( x**y)
+     
+n1=int(input("enter the number 1:"))
+n2=int(input("enter the number 2:"))
+power(n1,n2)'''
+
+#5
+'''def power(x):
+     print( x*x*x)
+     
+n1=int(input("enter the number:"))
+power(n1)'''
+
+#6
+'''def vsph(r):
+    print("the volume is:",(4*3.14*r*r*r)/3)
+    
+r1=float(input("enter the radius:"))
+vsph(r1)'''
+
+#7
+'''def ellipse(a,b):
+    print("Area:",3.14*a*b)
+x=float(input("enter then length of semi-major axis:"))    
+y=float(input("enter then length of semi-minor axis:"))
+ellipse(x,y)'''
+
+
+#8
+'''def sumarray(l1):
+    print("The sum is:",sum(l1))
+l2=[]    
+n1=int(input("enter the number of elemnts to be inputted:"))
+for i in range(n1):
+    e=int(input())
+    l2.append(e)
+sumarray(l2)  '''  
+
+#9
+'''def sumsquare(x):
+ print(x*x)
+a=int(input("enter the 1 number:"))
+b=int(input("enter the 2 number:"))
+print("The square of all numbers from",a,"to",b,"is:")
+for i in range(a,b+1):
+    sumsquare(i)'''
+    
+#10
+
+'''def addition(x,y):
+    print("the sum is",x+y)
+a=int(input("enter the number 1:"))
+b=int(input("enter the nyumber 2:"))
+addition(a,b)'''
+
+#11
+'''
+def calculator(x,y,option):
+    
+    if option=="+":
+        print(x+y)
+    elif option=="-":
+        print(x-y)
+    elif option=="*":
+        print(x*y)
+    elif option=="/":
+        print(x/y)
+    else:
+        print(x%y)
+opt=input("enter the operation you want to perform:")
+x=int(input("enter the number 1:"))
+y=int(input("enter the number 2:"))
+calculator(x,y,opt)        
+    
+'''
+
+#12
+'''def pythagoras(p,b):
+    c=(p*p+b*b)**0.5
+    print("The Length of Hypotenuse is:",c) 
+    
+x=float(input("enter the length of perpendicular:"))
+y=float(input("enter the length of Base:"))
+pythagoras(x,y)
+'''
