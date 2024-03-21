@@ -62,3 +62,18 @@ str1=str1.split()
 r=[i[::-1] for i in str1]
 print(' '.join(r))
 '''
+
+
+#How to print a decimal number to a fixed number if decimal places
+def calculation(a,b,c):
+    print("Sum:",a+b+c)
+    print("Product:",a*b*c)
+    print("Average: "f"{(a+b+c)/3:.2f}")
+
+          
+x,y,z=map(str,input().split(','))
+          
+a=int(x)
+b=int(y)
+c=int(z)
+calculation(a,b,c)
