@@ -1,0 +1,100 @@
+'''2. Write a Python program to create a function that 
+takes one argument, and that argument will be multiplied
+with an unknown given number.
+Sample Output:
+Double the number of 15 = 30
+Triple the number of 15 = 45
+Quadruple the number of 15 = 60
+Quintuple the number 15 = 75
+Click me to see the sample solution
+
+3. Write a Python program to sort a list of tuples using Lambda.
+Original list of tuples:
+[('English', 88), ('Science', 90), ('Maths', 97), 
+('Social sciences', 82)]
+Sorting the List of Tuples:
+[('Social sciences', 82), ('English', 88), ('Science', 90),
+('Maths', 97)]
+Click me to see the sample solution
+
+4. Write a Python program to sort a list of dictionaries
+using Lambda.
+Original list of dictionaries :
+[{'make': 'Nokia', 'model': 216, 'color': 'Black'}
+, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'},
+{'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
+Sorting the List of dictionaries :
+[{'make': 'Nokia', 'model': 216, 'color': 'Black'}, 
+{'make': 'Samsung', 'model': 7, 'color': 'Blue'},
+{'make': 'Mi Max', 'model': '2', 'color': 'Gold'}]'''
+
+'''def my_function(n):
+  return lambda a:a*n
+  
+d=int(input("enter the number:"))
+dou=my_function(d)
+print(dou(2))
+print(dou(3))
+print(dou(4))
+print(dou(5))'''
+
+'''def sort_function(l):
+  a=dict(l)
+  return lambda a:sorted(a.items())
+ 
+
+l=[('English', 88), ('Science', 90), ('Maths', 97), 
+('Social sciences', 82)]
+
+sorted_function=sort_function(l)
+print(sorted_function())
+'''
+
+'''def sort_function(l):
+    a = dict(l)
+    return lambda: sorted(a.items())
+
+l = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+
+sorted_function = sort_function(l)
+print(sorted_function())
+'''
+
+'''l = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+a=dict(l)
+
+sorted_d=sorted(a.items(),key=lambda x:x[1])
+
+print(sorted_d)
+'''
+
+
+'''
+l1=[{'make': 'Nokia', 'model': 216, 'color': 'Black'}, 
+{'make': 'Mi Max', 'model': '2', 'color': 'Gold'}, {'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
+
+sorted_l=sorted(l1,key=lambda x:x['color'])
+print(sorted_l)'''
+#1,4
+'''l=list(map(int,input("enter the integers:").split()))
+result=filter(lambda x:x%2==0,l)
+print(list(result))
+result2=filter(lambda x:x%2!=0,l)
+print(list(result2))'''
+
+#5
+'''l=list(map(int,input("enter the integers:").split()))
+l1=map(lambda x:x*x,l)
+print(list(l1))
+l2=map(lambda x:x*x*x,l)
+print(list(l2))'''
+
+#6
+'''s1=input("enter the string:")
+s2=input("enter the word:")
+s=lambda x,y:x.startswith(y)
+print(s(s1,s2))'''
+
+#8
+s=input("enter the string:")
+a=lambda x:x
