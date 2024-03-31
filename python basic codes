@@ -77,3 +77,14 @@ a=int(x)
 b=int(y)
 c=int(z)
 calculation(a,b,c)
+
+
+
+#dicitonary sorting via values
+l = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+a=dict(l)
+
+sorted_d=sorted(a.items(),key=lambda x:x[1])
+
+print(sorted_d)
+
