@@ -82,6 +82,32 @@ print(list(result))
 result2=filter(lambda x:x%2!=0,l)
 print(list(result2))'''
 
+#2
+l1=list(map(int,input().split()))
+def my_sum(l):
+    sum1=0
+    for i in l:
+        sum1+=i
+    print(sum1)
+
+my_sum(l1)
+
+#3
+def my_email(subject="xyz",body="enter your email"):
+    print("subject:",subject)
+    print(body)
+
+s=input("enter th subject:")
+s1=input("enter the body:")
+if s=="no" or s1=="no":
+    
+    my_email()
+    
+else:
+    my_email(s,s1)
+
+
+
 #5
 '''l=list(map(int,input("enter the integers:").split()))
 l1=map(lambda x:x*x,l)
@@ -95,6 +121,24 @@ s2=input("enter the word:")
 s=lambda x,y:x.startswith(y)
 print(s(s1,s2))'''
 
-#8
-s=input("enter the string:")
-a=lambda x:x
+#7
+'''def my_date(s):
+
+    x=s.split("-")
+    print("year:","".join(x[0]))
+    print("month:","".join(x[1]))
+    print("date:","".join(x[2]))
+    
+    
+str1=input("enter the date:")
+my_date(str1)
+    '''
+
+
+#8    
+s=input("enter the string:")  
+a=list(map(lambda s1:int(s1.isdigit()),s))
+print(a)
+
+
+
