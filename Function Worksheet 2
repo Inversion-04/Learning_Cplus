@@ -72,9 +72,16 @@ print(sorted_d)
 '''
 l1=[{'make': 'Nokia', 'model': 216, 'color': 'Black'}, 
 {'make': 'Mi Max', 'model': '2', 'color': 'Gold'}, {'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
-
 sorted_l=sorted(l1,key=lambda x:x['color'])
 print(sorted_l)'''
+
+
+
+
+#worksheet 2 functions
+
+
+
 #1,4
 '''l=list(map(int,input("enter the integers:").split()))
 result=filter(lambda x:x%2==0,l)
@@ -121,6 +128,7 @@ s2=input("enter the word:")
 s=lambda x,y:x.startswith(y)
 print(s(s1,s2))'''
 
+
 #7
 '''def my_date(s):
 
@@ -139,6 +147,40 @@ my_date(str1)
 s=input("enter the string:")  
 a=list(map(lambda s1:int(s1.isdigit()),s))
 print(a)
+
+#9
+
+'''l1=list(map(int,input().split()))
+l2=list(map(int,input().split()))
+a=set(l1)
+b=set(l2)
+
+k=lambda x1,x2:x1.intersection(x2)
+print(list(k(a,b)))'''
+
+
+#10
+'''l1=list(map(int,input().split()))
+a=list(filter(lambda x1: x1%2==0,l1))
+b=list(filter(lambda x2:x2%2!=0,l1))
+print("even:",len(a))
+print("odd:",len(b))'''
+
+
+#11
+'''l1=list(map(str,input().split()))
+x=list(filter(lambda x1:len(x1)==6 ,l1))
+print(" ".join(x))'''
+
+#12
+'''l1=list(map(int,input().split()))
+x=list(filter(lambda x1:x1>0,l1))
+y=list(filter(lambda x2:x2<0,l1))
+print("the sum of positive integers is:",sum(x))
+print("the sum of negative integers is:",sum(y))'''
+
+
+
 
 
 
