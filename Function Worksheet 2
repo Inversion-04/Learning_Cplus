@@ -180,6 +180,13 @@ print("the sum of positive integers is:",sum(x))
 print("the sum of negative integers is:",sum(y))'''
 
 
+#check if inputted character is in middle of string by lambda
+st=input()
+chr1=input()
+x=(lambda x1,x2:x1==x2[len(x2)//2])
+print(x(chr1,st))
+
+
 
 
 
