@@ -1,0 +1,93 @@
+#datetime module
+
+from datetime import datetime, date, time, timedelta
+
+c_d = datetime(2018, 2, 5)
+print(c_d)
+
+c1 = datetime.now()
+print(c1)
+
+a1 = c_d.strftime("%b")
+print(a1)
+
+a2 = c1.timestamp()
+print(a2)
+
+a3 = datetime.fromtimestamp(1713720513.965885)
+print(a3)
+
+print(c_d.date())
+print(c_d.time())
+
+a5 = date(2023, 4, 5)
+a6 = time(12, 30, 40)
+print(datetime.combine(a5, a6))
+
+print(c_d.timetuple())
+
+a7 = c_d.weekday()
+print(a7)
+
+a8 = c_d + timedelta(days=2, hours=22)
+print(a8)
+
+a9 = c_d.replace(year=2025, month=12, day=23)
+print(a9)
+
+
+#datetime+comments
+
+from datetime import datetime, date, time, timedelta
+
+# Define datetime objects
+c_d = datetime(2018, 2, 5)
+c1 = datetime.now()
+
+# Convert datetime to formatted string
+a1 = c_d.strftime("%b")
+
+# Get timestamp of current datetime
+a2 = c1.timestamp()
+
+# Convert timestamp to datetime object
+a3 = datetime.fromtimestamp(1713720513.965885)
+
+# Extract date and time from datetime object
+date_c_d = c_d.date()
+time_c_d = c_d.time()
+
+# Create date and time objects
+a5 = date(2023, 4, 5)
+a6 = time(12, 30, 40)
+
+# Combine date and time objects into a datetime object
+combined_datetime = datetime.combine(a5, a6)
+
+# Get timetuple of datetime object
+timetuple_c_d = c_d.timetuple()
+
+# Get weekday of datetime object
+weekday_c_d = c_d.weekday()
+
+# Add timedelta to datetime object
+a8 = c_d + timedelta(days=2, hours=22)
+
+# Replace year, month, and day of datetime object
+a9 = c_d.replace(year=2025, month=12, day=23)
+
+# Print results
+print("c_d:", c_d)
+print("c1:", c1)
+print("Formatted c_d:", a1)
+print("Timestamp of c1:", a2)
+print("Converted timestamp:", a3)
+print("Date of c_d:", date_c_d)
+print("Time of c_d:", time_c_d)
+print("Combined datetime:", combined_datetime)
+print("Timetuple of c_d:", timetuple_c_d)
+print("Weekday of c_d:", weekday_c_d)
+print("c_d + timedelta:", a8)
+print("c_d replaced:", a9)
+
+
