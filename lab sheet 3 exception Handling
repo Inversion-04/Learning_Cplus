@@ -1,0 +1,40 @@
+#lab sheet 3
+ #1
+ 
+'''age=int(input())
+try:
+    age//0
+     
+except ZeroDivisionError:
+    print("Zeroivision Error Handled")'''
+    
+#2
+'''try:
+ str1=input()
+ roll=int(input())
+ c=str1+roll
+ 
+except TypeError:
+    print("Invalid Operation")
+    
+ '''
+
+#3 
+'''def vcheck():
+    a=int(input())
+    
+    if a%2==0:
+        try:
+          z=a+"1"
+        except TypeError:
+            print("typerror")
+           
+    else:
+        try:
+            a/0
+          
+        except ZeroDivisionError:
+            print("Error")
+        
+  
+vcheck()'''  
