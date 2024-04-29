@@ -88,3 +88,53 @@ sorted_d=sorted(a.items(),key=lambda x:x[1])
 
 print(sorted_d)
 
+
+
+#1
+'''try:
+ a=int(input())
+ a/0
+except ZeroDivisionError:
+    print("zerodivison")
+
+ '''
+ 
+#2
+'''def catch():
+   
+    
+    try:
+     a=input()
+     b=int(input())
+        
+    except ValueError:
+        print("ValueError")
+        
+     
+catch() '''  
+
+
+l=list(map(int,input().split()))
+
+i=int(input())
+try:
+    
+
+
+
+     
+''' 
+import re
+a=input()
+n=int(input())
+print(a.index(chr(n)))
+x=re.search(chr(n),a)
+print(x.start())
+
+'''
+
+
+n=input()
+print(*n,sep="_",end="any character")---->it will sep all the character of string by space
+
+
